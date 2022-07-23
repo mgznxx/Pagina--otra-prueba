@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-weight: 300;*/
+    background-color: rgb(248, 247, 245);
+    
+}
+a{
+	text-decoration: none;
+    color: rgb(238, 235, 234);
+}
+.container {
+	width: auto;
+	max-width: 75em;
+	display: grid;
+    justify-content: space-between;
+    align-content: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: 
+    "logo      menu"
+    "aula      aula"
+    "main      main"
+    "foot      foot";
+}
+
+.menu {
+	display: flex;
+	justify-content: end;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.menu li a {
+	padding: 3.25em 2.75em;
+	color: rgb(179, 9, 9);
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: 1em;
+}
+.menu a:hover {
+	color: rgba(25, 23, 100, 0.5);
+    
+    
+
+
+}
+
+.logo {
+    grid-area: logo;
+    width: 12.5em;
+    
+}
+
+.container {
+    grid-area: container;
+}
+
+.hero{
+    grid-area: hero;
+
+}
+
+.menu{
+    grid-area: menu;
+    
+
+
+}
+
+.main{
+    grid-area: main;
+
+}
+
+.foot{
+    grid-area: foot;
+}
+
+.social{
+    grid-area: social;
+}
+
+.aula{
+    grid-area: aula;
+    width: 620%;
+    height: 100%;
+    filter: brightness(50%);
+}
+h1 {
+    font-size: 4.37em;
+    position: absolute;
+    top: 8em;
+    left: 3.2em;
+    color: white;    
+}
+
+h2 {
+    padding: 1em 3.12em;
+}
+
+p {
+    padding: 0.62em 2.18em 3.12em  1.87em;
+}
+
+.foot {
+    width: 100%;
+    background-color: rgb(33, 33, 92);
+    display: flex;
+	justify-content: space-around;
+}
+.ubicacion {
+    color: black;
+    font-size: 1.62em;
+}
+
+h3 {
+    font-size: 1.25em;
+    color: white;
+    padding: 50px ;
+}
+.social {
+    padding: 1.25em 3.75em 0px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(64, 45, 133);
+    list-style: none;
+}
+
+footer .foot{
+    list-style-type: none;
+}
+
+.parrafo {
+    padding: 1.25em 2.18em;
+}
+.contacto {
+    font-size: 1.62em;
+}
+
+
+.ubicacion {
+    padding: 1.25em 3.12em;
+}
+
+form{
+    padding-left: 5.62em;
+    color: black;
+    width: 30%;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 0px 0.12em;
+    border: 0.12em;
+}
+script {
+    padding: 1.25em;
+}
+
+/* Tarjetas Cursos*/
+
+.cursos {
+    font-size: 1.87em;
+}
+
+.tamañoImg {
+    width: 100%;
+}
+
+.contenido{
+    width: 100%;
+    display: flex;
+    max-width: 68.75em;
+    color:black;
+}
+
+.card{ 
+    width: 100%;
+    margin: 1.25em;
+    border-radius: 0.37em;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 0.06em 0.62em rgba(0, 0, 0, 2);
+    transition: all 400ms ease-out;
+    cursor: default;
+    
+}
+
+
+.card .cont{
+    padding: 0.94em;
+    text-align: center;
+
+
+}
+
+.card .cont p{
+    padding: 0.93em;
+    text-align: justify;
+}
+
+
+.card .cont h3{
+    font-weight: 600;
+    padding: 0.06em;
+}
+.card .cont a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.62em;
+    margin-top: 0.12em;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 0.25em;    
+}
+.card .cont a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+.card:hover{
+	box-shadow: 0.31em 0.31em 1.25em rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.salud {
+    color: black;
+}
+.compu {
+    color:black;
+}
+.idioma {
+    color:black;
+}
+
+iframe {
+    padding-left: 50px;
+}
+
+
+@media (max-width: 1300px){
+
+.foot {
+        width: 1300px;
+        background-color: rgb(33, 33, 92);
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+}
+
+@media (max-width: 600px){
+
+.container{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenido{
+    flex-wrap: wrap;
+}
+.card{
+    margin: 25px;
+    
+
+    }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+.menu li a {
+    padding: 5px 0px;
+    font-size: 12px;
+}    
+img.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    
+}
+
+.aula {
+    width: 600px;
+}
+
+h1 {
+    top: 400px;
+    font-size: 30px;
+}
+h3{
+    font-size: 14px;
+}
+.social {
+    font-size: 14px;
+}
+p {
+    font-size: 10px;
+    padding: 5px 10px 10px 0px;
+}
+
+.foot {
+    width: 600px;
+}
+form{
+    padding-left: 5.62em;
+    color: black;
+    width: 50%;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 0px 0.12em;
+    border: 0.12em;
+}
+script {
+    width: 50px;
+    padding: 1.25em;
+}
+}
+
+@media (max-width: 350px){
+
+.aula {
+        width: 350px;
+    }
+
+.foot {
+        width: 350px;
+
+    }
+h1 {
+        top: 300px;
+        font-size: 24px;
+    }
+h3{
+        font-size: 12px;
+    }
+.social {
+        font-size: 12px;
+    }
+
+form{
+        padding-left: 5.62em;
+        color: black;
+        width: 90%;
+        font-size: 0.75em;
+        font-weight: bold;
+        margin: 0px 0.12em;
+        border: 0.12em;
+    }
+.ubicacion {
+        display: none;
+        width: 20px;
+        padding: 1.25em;
+    }
+p {
+        font-size: 10px;
+        padding: 0px 10px 10px 10px;
+    }
+iframe {
+    display: none;
+}
+
+
+}
